@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+import Controllers.AdminController;
 import Services.Utility;
 
 public class main {
@@ -18,9 +20,12 @@ public class main {
             boolean loggedIn = false;
             switch (option) {
                 case 1:
-
+                    System.out.println("AOT");
+                    int result = AdminController.adminInit();
+                    break;
                 case 2:
                     System.out.println("Student");
+                    break;
                 case 3:
                     break;
             }

@@ -2,8 +2,8 @@ package Services;
 
 public class Utility {
     public static boolean numIsInArray(int[] arr, int number) {
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == number) return true;
+        for (int j : arr) {
+            if (j == number) return true;
         }
 
         return false;
@@ -11,5 +11,11 @@ public class Utility {
 
     public static void newLine() {
         System.out.println();
+    }
+
+    public static void showError(String error) {
+        System.out.println("____________________________________________________");
+        System.out.println(error);
+        System.out.println("----------------------------------------------------");
     }
 }

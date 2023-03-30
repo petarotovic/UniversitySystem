@@ -1,9 +1,13 @@
 package Models;
 
-public class Admin {
-    String name;
-    String email;
-    String password;
+public class Admin extends Person {
+    public Admin() {
+        this.name = "";
+        this.email = "";
+    }
 
-    public Admin() {}
+    public Admin(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
 }
